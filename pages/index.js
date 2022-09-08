@@ -35,11 +35,17 @@ export default function Home() {
     setPixels(newPixels);
   };
 
+  const [itID, setitID] = useState(null);
   const disco = () => {
-    setInterval(() => {
+    const id = setInterval(() => {
       const newPixels = CanvasLib.createRandomCanvas();
       setPixels(newPixels);
     }, 500);
+    setitID(id);
+  };
+
+  const stopdisco = () => {
+    clearInterval(itID);
   };
 
   return (
@@ -58,6 +64,9 @@ export default function Home() {
           </button>
           <button className="btn btn-dark" onClick={disco}>
             Disco
+          </button>
+          <button className="btn btn-dark" onClick={stopdisco}>
+            StopDisco
           </button>
         </div>
       </PainterContext.Provider>
