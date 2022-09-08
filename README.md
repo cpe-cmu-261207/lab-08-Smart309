@@ -15,4 +15,4 @@ npm run dev
 
 ให้นศ.ศึกษาวิธีการ build ใน **codesandbox.io** ได้จาก slide **Slide 10 - React Part One (extras)**
 
-(https://q2mwtl-3000.preview.csb.app/)
+(https://codesandbox.io/s/late-resonance-pqdifg)
